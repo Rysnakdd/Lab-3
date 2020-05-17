@@ -8,7 +8,7 @@ int main() {
 
     float x, z, y;
 
-    printf("Введіть значення x,z: \n");
+    printf("Р’РІРµРґС–С‚СЊ Р·РЅР°С‡РµРЅРЅСЏ x,z: \n");
 
     scanf_s("%f%f", &x, &z);
 
