@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <math.h>
+#include <locale.h>
+
+main() {
+
+    setlocale(LC_CTYPE, "ukr");
+
+    float x, y, r;
+
+    printf("Координати точки: ");
+
+    scanf_s("%f%f", &x, &y);
+
+    printf("Радиус круга: ");
+
+    scanf_s("%f", &r);
+
+    double h = sqrt(x * x + y * y);
+
+    printf("Гіпотенуза дорівнює %.2f. ", h);
+
+    if (h > r) printf("Точка не належуть кругу.\n");
+    else printf("Точка належить кругу.\n");
+
+    return 0;
+}

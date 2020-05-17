@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <math.h>
+#include <locale.h>
+
+main() {
+
+   setlocale(LC_CTYPE,"ukr");
+
+   float x, y, z;
+
+   printf("Задайте значення x y z\n");
+
+   scanf_s("%f%f%f", &x,&y,&z);
+
+   double a = sqrt((x * x * y) - (14 * z));
+   if (0 >= y && z>0) printf(" Для заданих хначень y та z у обчислювальному процесі відбувається знахаодження кореня з від'эмного числа/n");
+   else printf("%g\n", a);
+
+
+
+
+    return 0;
+}
